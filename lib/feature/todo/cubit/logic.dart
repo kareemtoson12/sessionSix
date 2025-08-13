@@ -15,6 +15,7 @@ class TodoCubit extends Cubit<TodoState> {
     int index = todos.indexOf(todo);
 
     todos.removeAt(index);
+
     emit(TodoRemoved(List.from(todos)));
   }
 
